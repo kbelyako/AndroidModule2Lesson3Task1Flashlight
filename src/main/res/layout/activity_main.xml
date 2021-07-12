@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvWelcomeMess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_to_flashlight_n_select_color_you_like"
+        android:layout_marginTop="60dp"
+        android:layout_centerInParent="true"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+         />
+
+    <Button
+        android:id="@+id/btGreen"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="50dp"
+        android:text="@string/green"
+        app:layout_constraintBottom_toTopOf="@+id/btWhite"
+        app:layout_constraintEnd_toStartOf="@+id/btWhite"
+        app:layout_constraintVertical_bias="0.0"
+         />
+
+    <Button
+        android:id="@+id/btBlue"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="160dp"
+        android:text="@string/blue"
+        app:layout_constraintBottom_toTopOf="@+id/btWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+
+        />
+
+    <Button
+        android:id="@+id/btRed"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="35dp"
+        android:text="@string/red"
+        app:layout_constraintBottom_toTopOf="@+id/btWhite"
+        app:layout_constraintStart_toEndOf="@+id/btWhite"
+        />
+
+    <Button
+        android:id="@+id/btWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="340dp"
+        android:text="@string/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btLTGray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="160dp"
+        android:text="@string/litegray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btWhite" />
+
+    <Button
+        android:id="@+id/btCyan"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/cyan"
+        app:layout_constraintStart_toEndOf="@+id/btWhite"
+        app:layout_constraintTop_toBottomOf="@+id/btWhite" />
+
+    <Button
+        android:id="@+id/btMagneta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        android:text="@string/mgneta"
+        app:layout_constraintEnd_toStartOf="@+id/btWhite"
+        app:layout_constraintTop_toBottomOf="@+id/btWhite" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
