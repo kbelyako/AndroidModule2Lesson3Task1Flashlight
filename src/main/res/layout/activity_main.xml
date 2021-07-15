@@ -4,37 +4,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/customViolet"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/tvWelcomeMess"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/welcome_to_flashlight_n_select_color_you_like"
-        android:layout_marginTop="60dp"
         android:layout_centerInParent="true"
+        android:layout_marginTop="60dp"
+        android:text="@string/welcome_text"
+        android:textSize="16dp"
 
+        android:textColor="@color/black"
+        android:textStyle="bold|italic"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-         />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btGreen"
-        android:layout_width="105dp"
+
         android:layout_height="wrap_content"
-        android:layout_marginEnd="35dp"
-        android:layout_marginRight="35dp"
+        android:layout_width="105dp"
+        android:layout_marginEnd="30dp"
+        android:textSize="13dp"
         android:layout_marginBottom="50dp"
         android:text="@string/green"
+        app:backgroundTint="@android:color/holo_green_dark"
         app:layout_constraintBottom_toTopOf="@+id/btWhite"
         app:layout_constraintEnd_toStartOf="@+id/btWhite"
-        app:layout_constraintVertical_bias="0.0"
-         />
+        android:layout_marginRight="30dp" />
 
     <Button
         android:id="@+id/btBlue"
-        android:layout_width="105dp"
+        android:layout_width="108dp"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:layout_marginBottom="160dp"
@@ -50,31 +54,40 @@
         android:id="@+id/btRed"
         android:layout_width="105dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
         android:layout_marginBottom="50dp"
-        android:layout_marginLeft="35dp"
+
+        android:textSize="13dp"
+
         android:text="@string/red"
+        app:backgroundTint="@android:color/holo_red_dark"
         app:layout_constraintBottom_toTopOf="@+id/btWhite"
-        app:layout_constraintStart_toEndOf="@+id/btWhite"
-        />
+        app:layout_constraintStart_toEndOf="@+id/btWhite" />
 
     <Button
         android:id="@+id/btWhite"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="105dp"
+        android:layout_height="37dp"
         android:layout_centerInParent="true"
         android:layout_marginBottom="340dp"
+        android:background="@color/white"
         android:text="@string/white"
+      android:textSize="13dp"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btLTGray"
-        android:layout_width="wrap_content"
+        android:layout_width="108dp"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:layout_marginTop="160dp"
         android:text="@string/litegray"
+        app:backgroundTint="@android:color/darker_gray"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
@@ -84,21 +97,27 @@
         android:id="@+id/btCyan"
         android:layout_width="105dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="35dp"
-        android:layout_marginLeft="35dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
         android:layout_marginTop="50dp"
         android:text="@string/cyan"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/cyan"
         app:layout_constraintStart_toEndOf="@+id/btWhite"
         app:layout_constraintTop_toBottomOf="@+id/btWhite" />
 
     <Button
         android:id="@+id/btMagneta"
-        android:layout_width="wrap_content"
+
         android:layout_height="wrap_content"
+        android:layout_width="105dp"
         android:layout_marginTop="50dp"
-        android:layout_marginEnd="35dp"
-        android:layout_marginRight="35dp"
-        android:text="@string/mgneta"
+        android:layout_marginEnd="30dp"
+        android:textSize="13dp"
+        android:layout_marginRight="30dp"
+        android:text="@string/magenta"
+
+        app:backgroundTint="@color/magenta"
         app:layout_constraintEnd_toStartOf="@+id/btWhite"
         app:layout_constraintTop_toBottomOf="@+id/btWhite" />
 

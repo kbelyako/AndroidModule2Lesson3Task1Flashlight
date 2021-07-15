@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">AndroidModule2Lesson3Task1Flashlight</string>
-    <string name="welcome_to_flashlight_n_select_color_you_like">Welcome to flashlight\n Select color, you like</string>
+    <string name="welcome_text">Welcome to flashlight\n Select color, you like</string>
     <string name="green">green</string>
     <string name="blue">blue</string>
     <string name="red">red</string>
     <string name="white">white</string>
     <string name="litegray">litegray</string>
     <string name="cyan">cyan</string>
-    <string name="mgneta">Mgneta</string>
+    <string name="magenta">magenta</string>
 </resources>
